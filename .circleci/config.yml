@@ -49,7 +49,7 @@ jobs:
           command: npm run build
       - add_ssh_keys:
           fingerprints:
-            - "24:53:42:a2:fe:23:bb:ff:a8:25:80:fc:84:53:01:e4"
+            - "ed:3e:b2:ab:2d:aa:ab:5f:e8:f1:ef:cf:1d:56:c8:97"
       - run: echo $REMOTE_HOSTKEY >> ~/.ssh/known_hosts
       - run:
           name: Upload release to dev
