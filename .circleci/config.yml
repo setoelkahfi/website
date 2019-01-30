@@ -36,7 +36,7 @@ jobs:
           root: /tmp/web
           paths:
             - .
-  build:
+  build_and_release:
     <<: *defaults
     steps:
       - checkout
@@ -53,12 +53,12 @@ jobs:
 
 workflows:
   version: 2
-  build_and_deploy_dev:
+  build_and_test:
     jobs:
       - install
-      - build:
-        requires:
-          - install
-        filters:
-          branches:
-            only: development
+      - build_and_release:
+          requires:
+            - install
+          filters:
+            branches:
+              only: development
