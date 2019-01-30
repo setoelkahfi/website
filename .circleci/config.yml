@@ -46,7 +46,7 @@ jobs:
       - run:
           name: Build frontend
           command: npm run build
-      -run:
+      - run:
           name: Upload release to dev
           command: rsync -r ./ $DEPLOYMENT_USER@$IP:$DEPLOYMENT_PATH
       - persist_to_workspace:
