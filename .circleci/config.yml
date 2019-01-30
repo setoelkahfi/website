@@ -56,7 +56,7 @@ jobs:
           command: rsync -avce ssh ./ $DEPLOYMENT_USER@$IP:$DEPLOYMENT_PATH
       - run:
           name: Start service
-          command: ssh $DEPLOYMENT_USER@$IP 'cd $DEPLOYMENT_PATH; pm2 restart ecosystem.config.js'
+          command: ssh $DEPLOYMENT_USER@$IP 'pm2 restart frontend'
       - persist_to_workspace:
           root: /tmp/web
           paths:
