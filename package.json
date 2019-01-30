@@ -5,7 +5,8 @@
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
-    "start-dev": "gulp"
+    "start-dev": "gulp",
+    "build": "gulp build"
   },
   "author": "Miikka Värri",
   "license": "ISC",
