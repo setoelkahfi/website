@@ -3,6 +3,7 @@ aliases:
     name: Install tools
     command: |
       sudo npm install -g npm@latest
+      sudo apt-get install rsync -y
 
   - &restore-npm-cache
     key: dependency-cache-{{ checksum "package.json" }}
