@@ -54,6 +54,9 @@ jobs:
       - run:
           name: Upload release to dev
           command: rsync -avce ssh ./ $DEPLOYMENT_USER@$IP:$DEPLOYMENT_PATH
+      - run:
+          name: Start service
+          command: ssh $DEPLOYMENT_USER@$IP 'cd $DEPLOYMENT_PATH; pm2 restart ecosystem.config.js'
       - persist_to_workspace:
           root: /tmp/web
           paths:
