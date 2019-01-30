@@ -47,9 +47,13 @@ jobs:
       - run:
           name: Build frontend
           command: npm run build
+      - add_ssh_keys:
+          fingerprints:
+            - "24:53:42:a2:fe:23:bb:ff:a8:25:80:fc:84:53:01:e4"
+      - run: echo $REMOTE_HOSTKEY >> ~/.ssh/known_hosts
       - run:
           name: Upload release to dev
-          command: rsync -r ./ $DEPLOYMENT_USER@$IP:$DEPLOYMENT_PATH
+          command: rsync -avce ssh ./ $DEPLOYMENT_USER@$IP:$DEPLOYMENT_PATH
       - persist_to_workspace:
           root: /tmp/web
           paths:
