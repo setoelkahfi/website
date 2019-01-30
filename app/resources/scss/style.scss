@@ -1,0 +1,94 @@
+body, html {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	background: rgba(2,0,36,1.0);
+}
+p {
+	color: #FFF;
+	font-family: 'Roboto Mono', monospace;
+	line-height: 1.7em;
+}
+.lead {
+	font-size: 1.02em;
+}
+#background {
+	background: url('../img/background.jpg') no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: block;
+  height: 100%;
+
+  .gradient {
+  	background: rgba(2,0,36,0.92);
+  	display: block;
+  	height: 100%;
+  }
+}
+
+.location-rotate {
+  position: fixed;
+  font-size: 0.9em;
+  font-family: 'Roboto Mono', monospace;
+  color: #fff;
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  left: -200px;
+  top: 50%;
+  z-index: 1040;
+}
+
+#frontpage {
+	display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 960px;
+  margin: 0 auto;
+  height: 100%;
+
+  h1 {
+		font-family: 'Poppins', sans-serif;
+		color: #FFF;
+		font-weight: 600;
+		span {
+			color: #ff9100;
+			font-weight: 600;
+		}
+	}
+}
+
+.player-area {
+	width: 50%;
+	float: left;
+	position: relative;
+	display: block;
+	height: auto;
+	display: flex;
+  align-items: center;
+  justify-content: center;
+
+	#player {
+		max-width: 100%;
+		min-width: 120%;
+		padding-top: 56.25%;
+		background: rgba(2,0,36,1);
+		position:absolute;
+
+		.vjs-big-play-button{
+			top: 50%;
+			left: 50%;
+			margin-left: -1.5em;
+			margin-top: -0.75em;
+			border:none;
+			background: #090979;
+		}
+		.vjs-tech { object-fit: cover; }
+	}
+}
+.title-area {
+	width: 50%;
+	float: right;
+	position: relative;
+}

@@ -1,0 +1,24 @@
+html
+  head
+    title= title
+    link(href='/static/css/style.css', rel='stylesheet')
+    link(href='https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900;Roboto+Mono', rel='stylesheet')
+
+  body
+    #background
+      .gradient
+        #frontpage
+          
+          .player-area          
+            video#player.video-js.vjs-default-skin(controls, preload='none')
+              source(src='http://192.168.86.155:8080/hls/stream.m3u8', type='application/x-mpegURL')
+          .title-area
+            h1
+              | Listen your 
+              span favourite DJs playing live
+              | , wherever you're.
+            p.lead DJDogs is an online platform to DJs to stream their live sessions to the rest of the world.
+
+        .location-rotate.hidden-first NEXT STREAM: DJ JOAKIM (SWE) | 10 FEB 2019 10:00PM GTM+0
+
+    script(src='/static/js/script.js')

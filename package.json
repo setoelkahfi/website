@@ -1,0 +1,32 @@
+{
+  "name": "Basementline website",
+  "version": "0.0.1",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "start-dev": "gulp"
+  },
+  "author": "Miikka Värri",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "normalize-scss": "^7.0.1",
+    "pug": "^2.0.3"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "connect-livereload": "^0.6.1",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-live-server": "0.0.31",
+    "gulp-notify": "^3.2.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-uglify": "^3.0.1",
+    "video.js": "^7.4.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/basementline/website.git"
+  }
+}
