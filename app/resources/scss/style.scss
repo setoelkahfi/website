@@ -10,7 +10,12 @@ p {
 	line-height: 1.7em;
 }
 .lead {
-	font-size: 1.02em;
+	font-size: 0.9em;
+	border-left: 1px solid #ff9100;
+	padding-left: 40px;
+	font-family: 'Roboto Mono', monospace;
+	font-weight: 400;
+	padding-right: 50px;
 }
 #background {
 	background: url('../img/background.jpg') no-repeat center center; 
@@ -44,7 +49,7 @@ p {
 	display: flex;
   align-items: center;
   justify-content: center;
-  width: 960px;
+  width: 980px;
   margin: 0 auto;
   height: 100%;
 
@@ -52,6 +57,7 @@ p {
 		font-family: 'Poppins', sans-serif;
 		color: #FFF;
 		font-weight: 600;
+		font-size: 1.9em;
 		span {
 			color: #ff9100;
 			font-weight: 600;
@@ -68,10 +74,11 @@ p {
 	display: flex;
   align-items: center;
   justify-content: center;
+  margin-right: 20px;
 
 	#player {
 		max-width: 100%;
-		min-width: 120%;
+		min-width: 100%;
 		padding-top: 56.25%;
 		background: rgba(2,0,36,1);
 		position:absolute;
@@ -91,4 +98,5 @@ p {
 	width: 50%;
 	float: right;
 	position: relative;
+	margin-left: 20px;
 }
