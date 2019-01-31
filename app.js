@@ -17,7 +17,13 @@ app.use('/static', express.static(publicDir));
 app.get('/', (req, res) => 
 	res.render('index', { 
 		title: 'Basementline'
-	}));
+	})
+);
+
+app.get('/faq', (req, res) => 
+	res.render('faq', { 
+	})
+);
 
 app.use(require('connect-livereload')({
   port: 35729

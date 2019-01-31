@@ -100,3 +100,30 @@ p {
 	position: relative;
 	margin-left: 20px;
 }
+
+#howTo {
+	float: left;
+	position: relative;
+	font-family: 'Poppins', sans-serif;
+	color: #FFF;
+	font-weight: 600;
+	font-size: 0.9em;
+	padding: 1em;
+	a {
+		color: #FFF;
+	}
+}
+
+.faq {
+	font-family: 'Poppins', sans-serif;
+	color: #FFF;
+	font-weight: 600;
+	font-size: 1.9em;
+	display: flex;
+  align-items: center;
+	justify-content: center;
+	
+	p {
+		font-size: 0.7em;
+	}
+}
