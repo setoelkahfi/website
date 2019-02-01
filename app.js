@@ -1,9 +1,15 @@
 const express = require('express');
 const path = require('path');
 const app = express();
+const helmet = require('helmet');
 const port = 3000;
 
+// Use helmet
+// Docs: https://github.com/helmetjs/helmet
+app.use(helmet());
+
 // Pug template engine
+// Docs: https://github.com/pugjs/pug
 const viewsDir = path.join(__dirname, 'app', 'views');
 app.set('view engine', 'pug');
 app.set('views', viewsDir);
