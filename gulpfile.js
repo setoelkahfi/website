@@ -61,6 +61,7 @@ gulp.task('js', function () {
   gulp
     .src([
         'node_modules/video.js/dist/video.js',
+        'node_modules/moment/moment.js',
         'app/resources/js/**/*.js'])
     .pipe(
         uglify()
