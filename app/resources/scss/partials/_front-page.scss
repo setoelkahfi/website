@@ -1,0 +1,21 @@
+#frontpage-bg {
+  background-image: url('../img/background.png');
+}
+#frontpage {
+  width: 980px;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+
+  .col {
+    flex: 1;
+  }
+  
+  .player-area {
+    margin-right: 20px;
+  }
+
+  .title-area {
+    margin-left: 20px;
+  }
+}

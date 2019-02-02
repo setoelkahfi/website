@@ -1,0 +1,19 @@
+#next-stream {
+  position: fixed;
+  font-size: 0.9em;
+  font-family: 'Roboto Mono', monospace;
+  color: #fff;
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  left: -220px;
+  top: 50%;
+  z-index: 1040;
+  opacity: 0;
+  transition: opacity .55s ease-in-out;
+  -moz-transition: opacity .55s ease-in-out;
+  -webkit-transition: opacity .55s ease-in-out;
+  
+  &.show {
+    opacity: 1;
+  }
+}

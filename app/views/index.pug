@@ -2,19 +2,19 @@
 extends layout.pug
 
 block content
-  #background
+  #frontpage-bg.background-cover
     .gradient
-      #frontpage
+      #frontpage.flex-center
         
-        .player-area
+        .player-area.col
           video#player.video-js.vjs-default-skin(controls, preload='none')
             source(src='/hls/stream.m3u8', type='application/x-mpegURL')
-        .title-area
+        .title-area.col
           h1
             | Watch and listen to 
-            span DJ’s playing, 
+            span.orange.w-600 DJ’s playing, 
             | or put up a set yourself. Watch or play 
-            span live 
+            span.orange.w-600 live 
             | wherever you are.
 
           p#desc.lead.hidden
