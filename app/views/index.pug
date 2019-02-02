@@ -7,8 +7,9 @@ block content
       #frontpage.flex-center
         
         .player-area.col
-          video#player.video-js.vjs-default-skin(controls, preload='none')
-            source(src='/hls/stream.m3u8', type='application/x-mpegURL')
+          div
+            video#player.video-js.vjs-default-skin(controls, preload='none')
+              source(src='/hls/stream.m3u8', type='application/x-mpegURL')
         .title-area.col
           h1
             | Watch and listen to 

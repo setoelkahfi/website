@@ -28,6 +28,13 @@
     .player-area {
       margin: 0;
       height: 50%;
+      position: relative;
+      align-items: center;
+      justify-content: center;
+    }
+    .player-area {
+      display: flex;
+      flex-direction: row;
     }
   }
 }
