@@ -8,16 +8,27 @@ p {
 }
 .lead {
   font-size: 0.9em;
-  border-left: 1px solid #ff9100;
+  border-left: 1px solid $orange-color;
   padding-left: 40px;
   padding-right: 50px;
+}
+@media screen and (max-width: 600px) {
+  .lead {
+    padding: 0 0 0 15px;
+    font-size: 0.8em;
+  }
 }
 h1 {
   font-weight: 600;
   font-size: 1.9em;
 }
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 1.4em;
+  }
+}
 .orange {
-  color: #ff9100;
+  color: $orange-color;
 }
 .w-600 {
   font-weight: 600;

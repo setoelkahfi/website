@@ -2,7 +2,7 @@
   background-image: url('../img/background.png');
 }
 #frontpage {
-  width: 980px;
+  max-width: 980px;
   margin: 0 auto;
   height: 100%;
   display: flex;
@@ -17,5 +17,17 @@
 
   .title-area {
     margin-left: 20px;
+  }
+}
+@media screen and (max-width: 600px) {
+  #frontpage {
+    padding: 0 5%;
+    flex-direction: column;
+
+    .title-area, 
+    .player-area {
+      margin: 0;
+      height: 50%;
+    }
   }
 }
