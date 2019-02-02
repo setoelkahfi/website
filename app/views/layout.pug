@@ -1,0 +1,11 @@
+//- layout.pug
+html
+  head
+    title #{title}
+    link(href='/static/css/style.css', rel='stylesheet')
+    link(href='https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900;Roboto+Mono', rel='stylesheet')
+
+  body
+    block content
+    block scripts
+      script(src='/static/js/script.js')

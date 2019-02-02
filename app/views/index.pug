@@ -1,28 +1,23 @@
-html
-  head
-    title= title
-    link(href='/static/css/style.css', rel='stylesheet')
-    link(href='https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900;Roboto+Mono', rel='stylesheet')
+//- index.pug
+extends layout.pug
 
-  body
-    #background
-      .gradient
-        #frontpage
-          
-          .player-area          
-            video#player.video-js.vjs-default-skin(controls, preload='none')
-              source(src='/hls/stream.m3u8', type='application/x-mpegURL')
-          .title-area
-            h1
-              | Watch and listen to 
-              span DJ’s playing, 
-              | or put up a set yourself. Watch or play 
-              span live 
-              | wherever you are.
+block content
+  #background
+    .gradient
+      #frontpage
+        
+        .player-area
+          video#player.video-js.vjs-default-skin(controls, preload='none')
+            source(src='/hls/stream.m3u8', type='application/x-mpegURL')
+        .title-area
+          h1
+            | Watch and listen to 
+            span DJ’s playing, 
+            | or put up a set yourself. Watch or play 
+            span live 
+            | wherever you are.
 
-            p#desc.lead.hidden
-              span Basementline is a platform for DJ’s of all levels to play and engage in the world of electronic music. We all share the passion for beats, bars and phrases.
+          p#desc.lead.hidden
+            span Basementline is a platform for DJ’s of all levels to play and engage in the world of electronic music. We all share the passion for beats, bars and phrases.
 
-    #next-stream
-
-    script(src='/static/js/script.js')
+  #next-stream

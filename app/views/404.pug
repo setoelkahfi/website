@@ -1,11 +1,8 @@
-html
-  head
-    title= title
-    link(href='/static/css/style.css', rel='stylesheet')
-    link(href='https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900;Roboto+Mono', rel='stylesheet')
+//- 404.pug
+extends layout.pug
 
-  body
-    #error-page
-      #error-content
-        h1= error.title
-        h2= error.message
+block content
+  #error-page
+    #error-content
+      h1= error.title
+      h2= error.message
