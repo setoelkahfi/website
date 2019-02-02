@@ -21,13 +21,23 @@ app.use('/static', express.static(publicDir));
 
 // Home page routing.
 app.get('/', (req, res) => 
-	res.render('index', { 
-		title: 'Basementline'
-	}));
+  res.render('index', { 
+    title: 'Basementline'
+  }));
 
 app.use(require('connect-livereload')({
   port: 35729
 }));
 
+// Handle 404
+app.use((req, res, next) =>
+  res.status(404).render('404', {
+    'title' : '404 Not Found',
+    'error' : {
+      'title' : '404',
+      'message' : 'Page not found'
+    }
+  }));
+
 app.listen(port, () => 
-	console.log(`App listening on port ${port}!`));
+  console.log(`App listening on port ${port}!`));

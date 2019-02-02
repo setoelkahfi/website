@@ -1,0 +1,27 @@
+#error-page {
+	text-align: center;
+	overflow: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center; /*centers items on the line (the x-axis by default)*/
+  align-items: center; /*centers items on the cross-axis (y by default)*/
+
+  #error-content{
+		h1 {
+			color: #FFF;
+			font-family: 'Poppins', sans-serif;
+			font-size: 5.5em;
+			line-height: 1em;
+			margin: 0;
+			padding: 0;
+		}
+
+		h2 {
+			color: #FFF;
+			font-family: 'Poppins', sans-serif;
+			color: #ff9100;
+		}
+	}
+}
